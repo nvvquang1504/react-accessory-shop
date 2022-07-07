@@ -14,7 +14,6 @@
    padding-left: #{$number}rem;
    padding-right: #{$number}rem;
 }
-
 @mixin padding-y($number) {
    padding-top: #{$number}rem;
    padding-bottom: #{$number}rem;
