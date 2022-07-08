@@ -7,15 +7,38 @@
          @include flex-center;
 
          & .search-bar {
+            width: 35rem;
+            height: 4.2rem;
+            @include flex-center;
+
             & .items {
-               height: 2rem;
+               @include padding-x(2);
+               @include padding-y(0.8);
+               outline: none;
+               height: 100%;
             }
-            & button.items{
+
+            & input.items {
+               border: 2px solid darkgrey;
+               border-right: none;
+               flex: 3;
+               //outline: none;
+            }
+
+            & button.items {
+               flex: 1;
                background: $color-primary-main;
+               border: 2px solid $color-primary-main;
+               color: white;
+               border-radius: 0 6px 6px 0;
+               font-weight: 600;
+               cursor: pointer;
             }
          }
 
          & .app-header__hamburger {
+            font-size: 3rem;
+
             &:hover {
                background-color: rgba(0, 0, 0, 0.04);
             }
