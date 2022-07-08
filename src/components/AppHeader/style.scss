@@ -84,7 +84,7 @@
    }
    & .MuiGrid-container.app-header__mobile {
       & .MuiGrid-item {
-         @include flex-center;
+         @include flex-between-center;
 
          & div {
             height: 4.5rem;
@@ -92,7 +92,8 @@
 
             & svg {
                font-size: 3rem;
-               margin-right: 1.5rem;
+               width: 100%;
+               height: 100%;
             }
 
             & svg.bs-bag {
@@ -120,7 +121,7 @@
          }
 
          & .search-bar {
-            width: 35rem;
+            width: 100%;
 
 
             & .items {
@@ -133,12 +134,11 @@
             & input.items {
                border: 2px solid darkgrey;
                border-right: none;
-               flex: 3;
-               //outline: none;
+               flex: 1;
+
             }
 
             & button.items {
-               flex: 1;
                background: $color-primary-main;
                border: 2px solid $color-primary-main;
                color: white;

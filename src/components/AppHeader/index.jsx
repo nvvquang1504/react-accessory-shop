@@ -6,6 +6,7 @@ import {BiPhoneCall} from 'react-icons/bi';
 import {BsBag} from 'react-icons/bs';
 import {FaRegUser} from 'react-icons/fa';
 import {useState, useEffect} from 'react';
+import {AiOutlineSearch} from 'react-icons/ai';
 
 const AppHeader = () => {
    const [width, setWidth] = useState(window.innerWidth);
@@ -20,12 +21,12 @@ const AppHeader = () => {
          {
             width < 1200
                ?
-               <Grid  className={'app-header__mobile'}  container>
+               <Grid className={'app-header__mobile'} container>
                   <Grid className={'mobile'} item container xs={12}>
-                     <Grid item xs={6} >
+                     <Grid item xs={6}>
                         <img src={lvlLogo} alt="logo"/>
                      </Grid>
-                     <Grid item xs={6} ></Grid>
+                     <Grid item xs={6}></Grid>
                   </Grid>
                   <Grid item xs={12}>
                      <IconButton className={'app-header__hamburger'} disableRipple={true} aria-label="hamburger">
@@ -33,7 +34,9 @@ const AppHeader = () => {
                      </IconButton>
                      <div className={'search-bar'}>
                         <input className={'items'} type="text" placeholder={'Bạn muốn tìm sản phẩm nào'}/>
-                        <button className={'items'}>Tìm kiếm</button>
+                        <button className={'items'}>
+                           <AiOutlineSearch/>
+                        </button>
                      </div>
                   </Grid>
                </Grid>
