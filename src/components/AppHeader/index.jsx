@@ -7,10 +7,11 @@ import {BsBag} from 'react-icons/bs';
 import {FaRegUser} from 'react-icons/fa';
 
 const AppHeader = () => {
-   
+   const [width, setWidth] = useState(window.innerWidth);
+   console.log(width)
    return (
-      <Box px={3} className={'app-header'}>
-         <Grid container>
+      <Box px={10} className={'app-header'}>
+         <Grid className={'app-header__pc'} container>
             <Grid item xs={2}>
                <img src={lvlLogo} alt="logo"/>
                <IconButton className={'app-header__hamburger'} disableRipple={true} aria-label="hamburger">
@@ -47,7 +48,7 @@ const AppHeader = () => {
                </div>
             </Grid>
             <Grid item xs={2}>
-               <div>
+               <div style={{cursor: 'pointer'}}>
                   <FaRegUser/>
                   <div className={'login-logout'}>
                      <b>Dang nhap</b>
@@ -56,6 +57,7 @@ const AppHeader = () => {
                </div>
             </Grid>
          </Grid>
+         
       </Box>
    );
 };
