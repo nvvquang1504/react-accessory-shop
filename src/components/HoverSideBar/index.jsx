@@ -1,5 +1,6 @@
 import './style.scss'
 import {Box, Stack} from '@mui/material'
+import SBItemContainer from "./SBItemContainer";
 import icon1 from '../../assets/icons/Linh-kien-moi.png'
 import icon2 from '../../assets/icons/Linh-kien-cu.png'
 import icon3 from '../../assets/icons/Thiet-bi-phong-game.png'
@@ -115,6 +116,7 @@ const HoverSideBar = () => {
                </Stack>
             })
          }
+         <SBItemContainer/>
       </Box>
    );
 };
