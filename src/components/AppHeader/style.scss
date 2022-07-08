@@ -2,7 +2,8 @@
 
 
 .app-header {
-   & .MuiGrid-container {
+   & .MuiGrid-container.app-header__pc {
+
       & .MuiGrid-item {
          @include flex-center;
 
@@ -65,6 +66,10 @@
                border-radius: 0 6px 6px 0;
                font-weight: 600;
                cursor: pointer;
+               &:hover{
+                  background: $color-primary-dark;
+                  border: 2px solid $color-primary-dark;
+               }
             }
          }
 
@@ -77,5 +82,83 @@
          }
       }
    }
+   & .MuiGrid-container.app-header__mobile {
+      & .MuiGrid-item {
+         @include flex-center;
 
+         & div {
+            height: 4.5rem;
+            @include flex-center;
+
+            & svg {
+               font-size: 3rem;
+               margin-right: 1.5rem;
+            }
+
+            & svg.bs-bag {
+               margin-right: 0;
+            }
+
+            & .MuiBadge-badge {
+               font-size: 1.4rem;
+            }
+
+            & .contact, & .login-logout {
+               align-items: start;
+               flex-direction: column;
+
+               & p {
+                  font-size: 1.4rem;
+               }
+
+               & b {
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  line-height: 1.2;
+               }
+            }
+         }
+
+         & .search-bar {
+            width: 35rem;
+
+
+            & .items {
+               @include padding-x(2);
+               @include padding-y(0.8);
+               outline: none;
+               height: 100%;
+            }
+
+            & input.items {
+               border: 2px solid darkgrey;
+               border-right: none;
+               flex: 3;
+               //outline: none;
+            }
+
+            & button.items {
+               flex: 1;
+               background: $color-primary-main;
+               border: 2px solid $color-primary-main;
+               color: white;
+               border-radius: 0 6px 6px 0;
+               font-weight: 600;
+               cursor: pointer;
+               &:hover{
+                  background: $color-primary-dark;
+                  border: 2px solid $color-primary-dark;
+               }
+            }
+         }
+
+         & .app-header__hamburger {
+            font-size: 3rem;
+
+            &:hover {
+               background-color: rgba(0, 0, 0, 0.04);
+            }
+         }
+      }
+   }
 }
