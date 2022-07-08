@@ -39,7 +39,7 @@ const AppHeader = () => {
                               <Stack direction={'row'} spacing={8}>
                                  <div>
                                     <Badge
-                                       color="primary.main" badgeContent={9}
+                                       color="primary" badgeContent={9}
                                        anchorOrigin={{
                                           vertical: 'bottom',
                                           horizontal: 'right',

@@ -2,6 +2,7 @@ import AppHeader from '../../components/AppHeader'
 import NavBar from "../../components/NavBar";
 import HoverSideBar from "../../components/HoverSideBar";
 import {Container, Grid} from "@mui/material";
+import Carousel from "../../components/Carousel";
 
 const HomePage = () => {
    return (
@@ -11,9 +12,11 @@ const HomePage = () => {
          <Container disableGutters={true}>
             <Grid container>
                <Grid xs={2.5} item>
-                  <HoverSideBar></HoverSideBar>
+                  <HoverSideBar/>
                </Grid>
-               <Grid xs={7} item></Grid>
+               <Grid xs={7} item>
+                  <Carousel/>
+               </Grid>
                <Grid xs={2.5} item></Grid>
             </Grid>
          </Container>
