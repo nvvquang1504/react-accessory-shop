@@ -39,8 +39,7 @@ const AppHeader = () => {
                               <Stack direction={'row'} spacing={8}>
                                  <div>
                                     <Badge
-                                       
-                                       color="primary" badgeContent={9}
+                                       color="primary.main" badgeContent={9}
                                        anchorOrigin={{
                                           vertical: 'bottom',
                                           horizontal: 'right',
@@ -88,7 +87,7 @@ const AppHeader = () => {
                            <button className={'items'}>Tìm kiếm</button>
                         </div>
                      </Grid>
-                     <Grid item xs={3}>
+                     <Grid item xs={3} className={'end'}>
                         <div>
                            <BiPhoneCall/>
                            <div className="contact">
@@ -97,7 +96,7 @@ const AppHeader = () => {
                            </div>
                         </div>
                      </Grid>
-                     <Grid item xs={1}>
+                     <Grid item xs={1} className={'end'}>
                         <div>
                            <Badge
                               
@@ -111,7 +110,7 @@ const AppHeader = () => {
                            </Badge>
                         </div>
                      </Grid>
-                     <Grid item xs={2}>
+                     <Grid item xs={2} className={'end'}>
                         <div style={{cursor: 'pointer'}}>
                            <FaRegUser/>
                            <div className={'login-logout'}>
