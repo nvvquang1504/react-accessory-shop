@@ -1,8 +1,10 @@
-import './style.scss'
-import {Box, Grid, IconButton} from '@mui/material';
+import './style.scss';
+import {Box, Grid, IconButton, Badge} from '@mui/material';
 import lvlLogo from '../../assets/lvllogo.png';
-import {GiHamburgerMenu} from 'react-icons/gi'
-import {styled} from "@mui/material/styles";
+import {GiHamburgerMenu} from 'react-icons/gi';
+import {BiPhoneCall} from 'react-icons/bi';
+import {BsBag} from 'react-icons/bs';
+import {FaRegUser} from 'react-icons/fa';
 
 const AppHeader = () => {
    
@@ -15,13 +17,21 @@ const AppHeader = () => {
                   <GiHamburgerMenu/>
                </IconButton>
             </Grid>
-            <Grid item xs={5}>
+            <Grid item xs={4}>
                <div className={'search-bar'}>
                   <input className={'items'} type="text" placeholder={'Bạn muốn tìm sản phẩm nào'}/>
                   <button className={'items'}>Tìm kiếm</button>
                </div>
             </Grid>
-            <Grid item xs={3}></Grid>
+            <Grid item xs={3}>
+               <div>
+                  <BiPhoneCall/>
+                  <div className="contact">
+                     <p>Hot line</p>
+                     <b>1900 0243 (8:30 - 21:00)</b>
+                  </div>
+               </div>
+            </Grid>
             <Grid item xs={2}></Grid>
          </Grid>
       </Box>

@@ -6,10 +6,42 @@
       & .MuiGrid-item {
          @include flex-center;
 
+         & div {
+            height: 4.5rem;
+            @include flex-center;
+
+            & svg {
+               font-size: 3rem;
+               margin-right: 1.5rem;
+            }
+
+            & svg.bs-bag {
+               margin-right: 0;
+            }
+
+            & .MuiBadge-badge {
+               font-size: 1.4rem;
+            }
+
+            & .contact {
+               align-items: start;
+               flex-direction: column;
+
+               & p {
+                  font-size: 1.4rem;
+               }
+
+               & b {
+                  font-size: 1.6rem;
+                  font-weight: 700;
+                  line-height: 1.2;
+               }
+            }
+         }
+
          & .search-bar {
             width: 35rem;
-            height: 4.2rem;
-            @include flex-center;
+
 
             & .items {
                @include padding-x(2);
