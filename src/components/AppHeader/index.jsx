@@ -32,7 +32,29 @@ const AppHeader = () => {
                   </div>
                </div>
             </Grid>
-            <Grid item xs={2}></Grid>
+            <Grid item xs={1}>
+               <div>
+                  <Badge
+                     
+                     color="primary" badgeContent={9}
+                     anchorOrigin={{
+                        vertical: 'bottom',
+                        horizontal: 'right',
+                     }}
+                  >
+                     <BsBag className={'bs-bag'}/>
+                  </Badge>
+               </div>
+            </Grid>
+            <Grid item xs={2}>
+               <div>
+                  <FaRegUser/>
+                  <div className={'login-logout'}>
+                     <b>Dang nhap</b>
+                     <b>Dang ky</b>
+                  </div>
+               </div>
+            </Grid>
          </Grid>
       </Box>
    );
