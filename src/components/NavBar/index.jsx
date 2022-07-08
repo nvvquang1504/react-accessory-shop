@@ -27,7 +27,7 @@ const NavBar = () => {
                         xay dung cau hinh
                      </a>
                   </li>
-                  <li className={'nav-bar__item end'}>
+                  <li className={'nav-bar__item'}>
                      <a href="">
                         kiem tra bao hanh
                      </a>
@@ -37,7 +37,7 @@ const NavBar = () => {
                         thiet bi gaming
                      </a>
                   </li>
-                  <li className={'nav-bar__item'}>
+                  <li className={'nav-bar__item end'}>
                      <a href="">
                         dich vu tan noi
                      </a>

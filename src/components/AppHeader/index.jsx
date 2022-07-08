@@ -18,7 +18,7 @@ const AppHeader = () => {
    
    return (
       <Box className={'app-header'}>
-         <Container>
+         <Container disableGutters={true}>
             {
                width < 1200
                   ?
