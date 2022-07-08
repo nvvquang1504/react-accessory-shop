@@ -1,1 +1,26 @@
 @import '../../scss/global';
+
+
+.app-header {
+   & .MuiGrid-container {
+      & .MuiGrid-item {
+         @include flex-center;
+
+         & .search-bar {
+            & .items {
+               height: 2rem;
+            }
+            & button.items{
+               background: $color-primary-main;
+            }
+         }
+
+         & .app-header__hamburger {
+            &:hover {
+               background-color: rgba(0, 0, 0, 0.04);
+            }
+         }
+      }
+   }
+
+}
