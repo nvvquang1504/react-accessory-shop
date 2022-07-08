@@ -2,6 +2,7 @@
 
 .hover-side-bar {
    &__item {
+      @include flex-center;
       cursor: pointer;
 
       &:hover {
@@ -11,7 +12,9 @@
          }
       }
 
-      @include flex-center;
+      & .arrow-icon {
+         @include flex-center;
+      }
 
       & .main-icons {
          @include flex-center;

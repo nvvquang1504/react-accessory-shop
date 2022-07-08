@@ -110,7 +110,7 @@ const HoverSideBar = () => {
                      <div className={'title'}>{item.title}</div>
                   </Stack>
                   <div className="arrow-icon">
-                     <IoIosArrowForward height={'100%'}/>
+                     <IoIosArrowForward fontSize={'1.2rem'}/>
                   </div>
                </Stack>
             })

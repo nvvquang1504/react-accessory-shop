@@ -13,7 +13,8 @@ const HomePage = () => {
                <Grid xs={2.5} item>
                   <HoverSideBar></HoverSideBar>
                </Grid>
-               <Grid xs={8.5} item></Grid>
+               <Grid xs={7} item></Grid>
+               <Grid xs={2.5} item></Grid>
             </Grid>
          </Container>
       </div>
