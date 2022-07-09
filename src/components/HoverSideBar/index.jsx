@@ -21,6 +21,7 @@ const HoverSideBar = () => {
          _id: 1,
          title: 'Linh kiện mới',
          icon: icon1,
+         
       },
       {
          _id: 2,
@@ -79,6 +80,9 @@ const HoverSideBar = () => {
       },
    
    ]
+   const handleMouseOver = (id) => {
+      console.log('id', id)
+   }
    return (
       <Box
          className={'hover-side-bar'}
@@ -98,6 +102,9 @@ const HoverSideBar = () => {
                   direction={'row'}
                   justifyContent={"space-between"}
                   p={1.5}
+                  onMouseOver={() => {
+                     handleMouseOver(item._id)
+                  }}
                >
                   <Stack
                      direction={'row'}
