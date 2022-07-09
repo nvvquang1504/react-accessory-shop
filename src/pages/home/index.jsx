@@ -9,7 +9,8 @@ import {Container, Grid, Stack} from "@mui/material";
 /*================== HOOKS ====================*/
 import {useState} from "react";
 /*================= IMAGES ====================*/
-import img1 from '../../assets/mini-banner/'
+import img1 from '../../assets/mini-banner/web-laptop_fix.png'
+import img2 from '../../assets/mini-banner/WEB-T6-2022-2-01.jpg'
 /*================== MAIN ====================*/
 const HomePage = () => {
    const [active, setActive] = useState(null)
@@ -22,18 +23,27 @@ const HomePage = () => {
                onMouseLeave={() => {
                   setActive(null);
                }}
+               mt={1}
                container>
                <Grid xs={2.5} item>
                   <HoverSideBar active={active} setActive={setActive}/>
                </Grid>
-               <Grid xs={7} item>
+               <Grid xs={6.5} item>
                   <Carousel/>
-                  <Stack direction={'row'}>
-                   <MiniBanner/>
-                   <MiniBanner/>
+                  <Stack p={1} direction={'row'}>
+                     <Grid container spacing={1}>
+                        <Grid item xs={6}>
+                           <MiniBanner background={img1}/>
+                        </Grid>
+                        <Grid item xs={6}>
+                           <MiniBanner background={img2}/>
+                        </Grid>
+                     </Grid>
                   </Stack>
                </Grid>
-               <Grid xs={2.5} item></Grid>
+               <Grid xs={3} item>
+               
+               </Grid>
             </Grid>
          </Container>
       </div>
