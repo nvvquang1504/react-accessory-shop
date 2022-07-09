@@ -1,7 +1,15 @@
+@import '../../../../scss/global';
+
 .type-distribution {
    & .item {
+      cursor: pointer;
       text-align: left;
       padding-left: 3rem;
+      transition: 0.3s all linear;
+
+      &:hover {
+         color: $color-primary-main;
+      }
 
       &.title {
          font-weight: 600;
