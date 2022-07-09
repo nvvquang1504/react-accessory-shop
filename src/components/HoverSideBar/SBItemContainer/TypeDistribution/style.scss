@@ -1,3 +1,12 @@
 .type-distribution {
+   & .item {
+      text-align: left;
+      padding-left: 3rem;
 
+      &.title {
+         font-weight: 600;
+
+         padding-left: 0;
+      }
+   }
 }
