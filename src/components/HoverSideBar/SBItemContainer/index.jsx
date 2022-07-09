@@ -1,12 +1,12 @@
 import "./style.scss";
 import {Box} from '@mui/material';
 import TypeDistribution from "./TypeDistribution";
-import {sideBarData} from "../../../utils/myData";
 
-const SBItemContainer = () => {
+
+const SBItemContainer = (props) => {
    return (
       <Box className={'side-bar-item-container'}>
-         <TypeDistribution data={sideBarData[0]}/>
+         <TypeDistribution data={props.data}/>
       </Box>
    );
 };

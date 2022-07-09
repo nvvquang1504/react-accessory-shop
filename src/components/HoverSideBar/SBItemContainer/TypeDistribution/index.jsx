@@ -3,9 +3,7 @@ import {Box, Grid} from '@mui/material'
 
 const TypeDistribution = (props) => {
    const {data} = props;
-   // const upperFirstLetter = (string) => {
-   //    return string.charAt(0).toUpperCase() + string.slice(1);
-   // }
+
    return (
       <Box className={'type-distribution'}>
          <Grid container>

@@ -1,5 +1,6 @@
 import './style.scss'
 import {Box, Stack} from '@mui/material'
+import {useState, useEffect} from "react";
 import SBItemContainer from "./SBItemContainer";
 import icon1 from '../../assets/icons/Linh-kien-moi.png'
 import icon2 from '../../assets/icons/Linh-kien-cu.png'
@@ -14,6 +15,7 @@ import icon10 from '../../assets/icons/phu-kien-dien-thoai.png'
 import icon11 from '../../assets/icons/Music-speaker.png'
 import icon12 from '../../assets/icons/Phan-mem-va-phu-kien.png'
 import {IoIosArrowForward} from 'react-icons/io'
+import {sideBarData} from "../../utils/myData";
 
 const HoverSideBar = () => {
    const sideBarArr = [
@@ -80,9 +82,7 @@ const HoverSideBar = () => {
       },
    
    ]
-   const handleMouseOver = (id) => {
-      console.log('id', id)
-   }
+   const [active, setActive] = useState(null)
    return (
       <Box
          className={'hover-side-bar'}
@@ -103,7 +103,7 @@ const HoverSideBar = () => {
                   justifyContent={"space-between"}
                   p={1.5}
                   onMouseOver={() => {
-                     handleMouseOver(item._id)
+                     setActive(item._id);
                   }}
                >
                   <Stack
@@ -123,7 +123,14 @@ const HoverSideBar = () => {
                </Stack>
             })
          }
-         <SBItemContainer/>
+         {
+            sideBarData.map((data) => {
+               return (
+                  <SBItemContainer data={data}/>
+               )
+            })
+         }
+      
       </Box>
    );
 };

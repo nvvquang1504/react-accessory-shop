@@ -126,57 +126,28 @@ export const sideBarData = [
    {
       _id: 2,
       subMenus: [
-         //CPU
+         //GAME DESK
          {
-            title: {_id: 'cpu-boxuly', vi: 'Bộ xử lý', en: 'CPU'},
+            title: {_id: 'gamedesk-banchoigame', en: 'Game Desk', vi: 'Bàn chơi game'},
             items: [
-               {_id: 'i-pentium', title: 'Intel Pentium'},
-               {_id: 'i-celeron', title: 'Intel Celeron'},
-               {_id: 'i-corei3', title: 'Intel Core i3'},
-               {_id: 'i-corei5', title: 'Intel Core i5'},
-               {_id: 'i-corei7', title: 'Intel Core i7'},
-               {_id: 'i-corei9', title: 'Intel Core i9'},
-               {_id: 'i-xeon', title: 'Intel Xeon'},
-               {_id: 'amd-athlon', title: 'AMD Athlon'},
-               {_id: 'amd-ryzen3', title: 'AMD Ryzen 3'},
-               {_id: 'amd-ryzen5', title: 'AMD Ryzen 5'},
-               {_id: 'amd-ryzen7', title: 'AMD Ryzen 7'},
-               {_id: 'amd-ryzen9', title: 'AMD Ryzen 9'},
+               {_id: 'ban-gaming', title: 'Bàn Gaming'},
+               {_id: 'ban-pc-chu-z', title: 'Bàn Pc chữ Z'},
+               {_id: 'ban-phong-net', title: 'Bàn phòng net'},
+               {_id: 'ban-theo-yeu-cau', title: 'Bàn theo yêu cầu'},
             ]
          },
-         //MAINBOARD
+         //GHE GAME
          {
-            title: {_id: 'mainboard-bomachchu', en: 'CPU', vi: 'Bộ xử lý'},
+            title: {_id: 'gamechair-ghechoigame', en: 'Game Chair', vi: 'Ghế chơi game'},
             items: [
-               {_id: 'main-asus', title: 'Main ASUS'},
-               {_id: 'main-asrock', title: 'Main ASROCK'},
-               {_id: 'main-afox', title: 'Main AFOX'},
-               {_id: 'main-colorful', title: 'Main COLORFUL'},
-               {_id: 'main-gigabyte', title: 'Main GIGABYTE'},
-               {_id: 'main-msi', title: 'Main MSI'},
-               {_id: 'main-amd', title: 'Main AMD'},
-               {_id: 'main-dongb', title: 'Main dòng B '},
-               {_id: 'main-dongh', title: 'Main dòng H'},
-               {_id: 'main-dongz', title: 'Main dòng Z'},
-               {_id: 'main-hangkhac', title: 'Main hãng khác'},
+               {_id: 'ghe-gaming', title: 'Ghế Gaming'},
+               {_id: 'ghe-phong-net', title: 'Ghế phòng net'},
+               {_id: 'ghe-sofa', title: 'Ghế Sofa'},
+               {_id: 'ghe-chan-quy-lung-cao', title: 'Ghế chân quỳ lưng cao'},
+               {_id: 'ghe-chan-quy-lung-thap', title: 'Ghế chân quỳ lưng thấp'},
             ]
          },
-         //RAM
-         {
-            title: {_id: 'ram-bonhoram', en: 'RAM', vi: 'Bộ nhớ ram'},
-            items: [
-               {_id: 'ram-ddr3-pc', title: 'Ram DDR3 Pc'},
-               {_id: 'ram-ddr4-pc', title: 'Ram DDR4 Pc'},
-               {_id: 'ram-ddr5-pc', title: 'Ram DDR5 Pc'},
-               {_id: 'ram-ddr3-server', title: 'Ram DDR3 Server'},
-               {_id: 'ram-ddr4-server', title: 'Ram DDR4 Server'},
-               {_id: 'ram-4gb-8gb', title: 'Ram 4GB, 8GB'},
-               {_id: 'ram-16gb-32gb', title: 'Ram 16GB, 32GB'},
-               {_id: 'ram-kit', title: 'Ram Kit'},
-               {_id: 'ram-led', title: 'Ram Led'},
-            ]
-         },
-         //VGA
+         //THIET BI CHO PHONG MAY TAP TRUNG
          {
             title: {_id: 'vga-cardmanhinh', en: 'VGA', vi: 'Card màn hình'},
             items: [
@@ -195,7 +166,16 @@ export const sideBarData = [
                {_id: 'vga-nvidia-quadro', title: 'VGA Nvidia Quadro'},
             ]
          },
-        
+         //PHU KIEN KHAC
+         {
+            title: {_id: 'other-phukienkhac', en: 'Other', vi: 'Phụ kiện khác'},
+            items: [
+               {_id: 'de-bat-mainboard', title: 'Đế bắt mainboard'},
+               {_id: 'nut-nguon', title: 'Nút nguồn'},
+               {_id: 'bang-game', title: 'Bảng game'},
+               
+            ]
+         },
       ]
    },
 ]
