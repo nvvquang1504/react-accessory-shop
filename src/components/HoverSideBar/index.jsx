@@ -17,7 +17,9 @@ import icon12 from '../../assets/icons/Phan-mem-va-phu-kien.png'
 import {IoIosArrowForward} from 'react-icons/io'
 import {sideBarData} from "../../utils/myData";
 
-const HoverSideBar = () => {
+const HoverSideBar = (props) => {
+   const {active, setActive} = props;
+  
    const sideBarArr = [
       {
          _id: 1,
@@ -82,7 +84,7 @@ const HoverSideBar = () => {
       },
    
    ]
-   const [active, setActive] = useState(null)
+   
    return (
       <Box
          className={'hover-side-bar'}
@@ -102,6 +104,7 @@ const HoverSideBar = () => {
                   direction={'row'}
                   justifyContent={"space-between"}
                   p={1.5}
+             
                   onMouseOver={() => {
                      setActive(item._id);
                   }}
@@ -124,10 +127,14 @@ const HoverSideBar = () => {
             })
          }
          {
-            sideBarData.map((data) => {
-               return (
-                  <SBItemContainer data={data}/>
-               )
+            sideBarData.map((data, index) => {
+               if (active === index + 1) {
+                  return (
+                     <SBItemContainer setActive={setActive} key={index} data={data}/>
+                  )
+               } else {
+                  return '';
+               }
             })
          }
       

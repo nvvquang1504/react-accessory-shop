@@ -173,7 +173,6 @@ export const sideBarData = [
                {_id: 'de-bat-mainboard', title: 'Đế bắt mainboard'},
                {_id: 'nut-nguon', title: 'Nút nguồn'},
                {_id: 'bang-game', title: 'Bảng game'},
-               
             ]
          },
       ]

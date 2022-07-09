@@ -4,9 +4,14 @@ import TypeDistribution from "./TypeDistribution";
 
 
 const SBItemContainer = (props) => {
+   const {data, setActive} = props;
    return (
-      <Box className={'side-bar-item-container'}>
-         <TypeDistribution data={props.data}/>
+      <Box
+         onMouseLeave={() => {
+            setActive(null);
+         }}
+         className={'side-bar-item-container'}>
+         <TypeDistribution data={data}/>
       </Box>
    );
 };
