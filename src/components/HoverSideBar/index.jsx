@@ -19,13 +19,11 @@ import {sideBarData} from "../../utils/myData";
 
 const HoverSideBar = (props) => {
    const {active, setActive} = props;
-  
    const sideBarArr = [
       {
          _id: 1,
          title: 'Linh kiện mới',
          icon: icon1,
-         
       },
       {
          _id: 2,
