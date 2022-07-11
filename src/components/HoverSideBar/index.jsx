@@ -19,71 +19,11 @@ import {useSelector} from "react-redux";
 const HoverSideBar = (props) => {
    const {active, setActive} = props;
    const sideBarData = useSelector((state) => {
-      return state.menu;
+      return state.menu.data;
    })
-   const sideBarArr = [
-      {
-         _id: 1,
-         title: 'Linh kiện mới',
-         icon: icon1,
-      },
-      {
-         _id: 2,
-         title: 'Linh kiện cũ',
-         icon: icon2,
-      },
-      {
-         _id: 3,
-         title: 'Thiết bị phòng game',
-         icon: icon3,
-      },
-      {
-         _id: 4,
-         title: 'Máy tính để bàn',
-         icon: icon4,
-      },
-      {
-         _id: 5,
-         title: 'Màn hình máy tính',
-         icon: icon5,
-      },
-      {
-         _id: 6,
-         title: 'Laptop',
-         icon: icon6,
-      },
-      {
-         _id: 7,
-         title: 'Ổ cứng PC',
-         icon: icon7,
-      },
-      {
-         _id: 8,
-         title: 'Chuột, bàn phím, tai nghe',
-         icon: icon8,
-      },
-      {
-         _id: 9,
-         title: 'Thiết bị mạng, camera',
-         icon: icon9,
-      },
-      {
-         _id: 10,
-         title: 'Phụ kiện điện thoại',
-         icon: icon10,
-      },
-      {
-         _id: 11,
-         title: 'Thiết bị âm thanh',
-         icon: icon11,
-      },
-      {
-         _id: 12,
-         title: 'Phụ kiện và phần mềm',
-         icon: icon12,
-      },
-   
-   ]
+   const sideBarArr =useSelector((state) => {
+      return state.menu.list;
+   })
    
    return (
       <Box

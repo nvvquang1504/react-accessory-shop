@@ -27,28 +27,30 @@ const HomePage = () => {
                }}
                mt={1}
                container>
-               <Grid xs={2.5} item>
+               <Grid xs={3} item>
                   <HoverSideBar active={active} setActive={setActive}/>
                </Grid>
-               <Grid xs={6.5} item>
-                  <Carousel/>
-                  <Stack p={1} direction={'row'}>
-                     <Grid container spacing={1}>
-                        <Grid item xs={6}>
-                           <MiniBanner background={img1}/>
-                        </Grid>
-                        <Grid item xs={6}>
-                           <MiniBanner background={img2}/>
-                        </Grid>
-                     </Grid>
-                  </Stack>
-               </Grid>
-               <Grid xs={3} item>
-                  <Stack>
+               <Grid  container xs={9} item>
+                  <Grid item xs={8}>
+                     <Carousel/>
+                  </Grid>
+                  <Grid item xs={4}>
+                     <MiniBanner background={img1}/>
+                     <MiniBanner background={img1}/>
+                  </Grid>
+                  <Grid item xs={4}>
+                     <MiniBanner background={img2}/>
+                  </Grid>
+                  <Grid item xs={4}>
                      <MiniBanner background={img3}/>
+                  </Grid>
+                  <Grid item xs={4}>
                      <MiniBanner background={img4}/>
-                  </Stack>
+                  </Grid>
                </Grid>
+               {/*<Grid xs={3} item>*/}
+               
+               {/*</Grid>*/}
             </Grid>
          </Container>
       </div>
