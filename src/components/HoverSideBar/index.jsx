@@ -1,6 +1,5 @@
 import './style.scss'
 import {Box, Stack} from '@mui/material'
-import {useState, useEffect} from "react";
 import SBItemContainer from "./SBItemContainer";
 import icon1 from '../../assets/icons/Linh-kien-moi.png'
 import icon2 from '../../assets/icons/Linh-kien-cu.png'
@@ -15,10 +14,13 @@ import icon10 from '../../assets/icons/phu-kien-dien-thoai.png'
 import icon11 from '../../assets/icons/Music-speaker.png'
 import icon12 from '../../assets/icons/Phan-mem-va-phu-kien.png'
 import {IoIosArrowForward} from 'react-icons/io'
-import {sideBarData} from "../../utils/myData";
+import {useSelector} from "react-redux";
 
 const HoverSideBar = (props) => {
    const {active, setActive} = props;
+   const sideBarData = useSelector((state) => {
+      return state.menu;
+   })
    const sideBarArr = [
       {
          _id: 1,
@@ -102,7 +104,7 @@ const HoverSideBar = (props) => {
                   direction={'row'}
                   justifyContent={"space-between"}
                   p={1.5}
-             
+                  
                   onMouseOver={() => {
                      setActive(item._id);
                   }}
@@ -135,7 +137,6 @@ const HoverSideBar = (props) => {
                }
             })
          }
-      
       </Box>
    );
 };

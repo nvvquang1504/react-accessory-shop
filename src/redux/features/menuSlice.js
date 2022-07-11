@@ -1,4 +1,6 @@
-export const sideBarData = [
+import {createSlice} from '@reduxjs/toolkit';
+
+const initialState = [
    {
       _id: 1,
       subMenus: [
@@ -178,3 +180,13 @@ export const sideBarData = [
       ]
    },
 ]
+
+const menuSlice = createSlice({
+   name: 'menu',
+   initialState,
+   // reducers:{
+   //
+   // }
+})
+
+export default menuSlice.reducer;

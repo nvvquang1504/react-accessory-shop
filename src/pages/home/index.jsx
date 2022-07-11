@@ -11,6 +11,8 @@ import {useState} from "react";
 /*================= IMAGES ====================*/
 import img1 from '../../assets/mini-banner/web-laptop_fix.png'
 import img2 from '../../assets/mini-banner/WEB-T6-2022-2-01.jpg'
+import img3 from '../../assets/mini-banner/WEB-T6-2022-2-04.png'
+import img4 from '../../assets/mini-banner/WEB-T6-2022-2-03.jpg'
 /*================== MAIN ====================*/
 const HomePage = () => {
    const [active, setActive] = useState(null)
@@ -42,7 +44,10 @@ const HomePage = () => {
                   </Stack>
                </Grid>
                <Grid xs={3} item>
-               
+                  <Stack>
+                     <MiniBanner background={img3}/>
+                     <MiniBanner background={img4}/>
+                  </Stack>
                </Grid>
             </Grid>
          </Container>
